@@ -14,12 +14,12 @@ The ansible scripts will do the following
       or
       pip install ansible
 ### Java
-Minium version Java8
+Minimum version Java8
 ### Python
-Minium version 2.7
+Minimum version 2.7
 ### Screen
     brew install screen
-    Minium version : 4.7.0
+    Minimum version : 4.7.0
   
 # Running the script
      ansible-playbook setup.yaml -i inventory.ini
