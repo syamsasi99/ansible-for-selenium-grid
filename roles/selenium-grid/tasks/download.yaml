@@ -1,5 +1,5 @@
 ---
-- name: Check the jar dowanload folder
+- name: Check the selenium server jar download folder exists
   stat:
     path: "{{selenium_jar_path}}"
   register: selenium_jar_dir
