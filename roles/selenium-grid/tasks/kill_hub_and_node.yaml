@@ -1,0 +1,10 @@
+---
+ - name: kill selenium hub
+   vars:
+     port : "{{selenium_hub_port}}"
+   command: bash -lc "lsof -i tcp:{{port}} | grep java | awk '{print $2}' | xargs kill -9"
+
+ - name: kill selenium node
+   vars:
+     port : "{{selenium_node_port}}"
+   command: bash -lc "lsof -i tcp:{{port}} | grep java | awk '{print $2}' | xargs kill -9"
